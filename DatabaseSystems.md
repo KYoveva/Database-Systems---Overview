@@ -85,7 +85,28 @@ GO
 * A NoSQL (originally referring to "non SQL" or "non relational") database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases.
 
 # 12. Explain the classical non-relational data models.
-* 
+* Key-value stores - The key-value model is one of the simplest non-trivial data models, and richer data models are often implemented on top of it. The key-value model can be extended to an ordered model that maintains keys in lexicographic order. This extension is powerful, in that it can efficiently process key ranges.
+
+* Document store - The central concept of a document store is the notion of a "document". While each document-oriented database implementation differs on the details of this definition, in general, they all assume that documents encapsulate and encode data (or information) in some standard formats or encodings. Encodings in use include XML, YAML, and JSON as well as binary forms like BSON. Documents are addressed in the database via a unique key that represents that document. One of the other defining characteristics of a document-oriented database is that in addition to the key lookup performed by a key-value store, the database offers an API or query language that retrieves documents based on their contents 
+
+* Graph - This kind of database is designed for data whose relations are well represented as a graph (elements interconnected with an undetermined number of relations between them). The kind of data could be social relations, public transport links, road maps or network topologies, for example. 
 
 # 13. Give few examples of NoSQL databases and their pros and cons.
+* Redis -  is a data structure server. It is open-source, networked, in-memory, and stores keys with optional durability. 
+
+* MongoDB - MongoDB (from humongous) is a cross-platform document-oriented database. Classified as a NoSQL database, MongoDB eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster.
+Advantages:
+  * Enables horizontal scalability by using a technique called sharding.
+  * Provides ACID properties at the document level as in the case of relational databases.
+  * It supports replica sets.
+  * It supports the common authentication mechanisms, such as LDAP, AD, and certificates. Users can connect to MongoDB over SSL and the data can be encrypted.
+
+* CouchDB - Apache CouchDB, commonly referred to as CouchDB, is an open source database that focuses on ease of use and on being "a database that completely embraces the web". It is a document-oriented NoSQL database that uses JSON to store data, JavaScript as its query language using MapReduce, and HTTP for an API. 
+Advantages:
+  * Fast and agile schema updates/changes
+  * Map Reduce queries in a turing complete language of your choice. (no more sql)
+  * Flexible Schema designs
+  * Freeform Object Storage
+  * Really really easy replication
+  * Really Really easy Load-Balancing (soon) 
   
